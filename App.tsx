@@ -12,6 +12,7 @@ const Stack = createStackNavigator();
 function App(): React.JSX.Element {
   return (
     <NavigationContainer>
+<<<<<<< Updated upstream
       <Stack.Navigator initialRouteName='ForgotScreen'>
         <Stack.Screen name="LoginScreen" component={LoginScreen} options={{ headerShown: false }} />
         <Stack.Screen name="RegisterScreen" component={RegisterScreen} options={{ headerTitle: 'Register' }} />
@@ -20,6 +21,17 @@ function App(): React.JSX.Element {
         <Stack.Screen name="ResetPassWord" component={ResetPassWord} options={{ headerTitle: 'Reset Password' }} />
       </Stack.Navigator>
     </NavigationContainer>
+=======
+    <Stack.Navigator initialRouteName='ForgotScreen'>
+      <Stack.Screen name="LoginScreen" component={LoginScreen} options={{ headerShown: false }} />
+      <Stack.Screen name="RegisterScreen" component={RegisterScreen} options={{ headerTitle: 'Register' }} />
+      <Stack.Screen name="ForgotScreen" component={ForgotScreen} options={{ headerShown: false }} />
+      <Stack.Screen name="ResetPassWord" component={ResetPassWord} options={{ headerTitle: 'Reset Password' }} />
+      <Stack.Screen name="ChangePasswordSuccess" component={ChangePasswordSuccess} options={{ headerShown: false }} />
+    </Stack.Navigator>
+  </NavigationContainer>
+
+>>>>>>> Stashed changes
   );
 }
 export default App;
