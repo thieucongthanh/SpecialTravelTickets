@@ -11,7 +11,7 @@ const Stack = createStackNavigator();
 function App(): React.JSX.Element {
   return(
     <NavigationContainer>
-      <Stack.Navigator initialRouteName='LoginScreen'>
+      <Stack.Navigator initialRouteName='ForgotScreen'>
         <Stack.Screen name="LoginScreen" component={LoginScreen}  options={{ headerShown: false}}/>
         <Stack.Screen name="RegisterScreen" component={RegisterScreen} options={{ headerTitle: 'Register' }}/>
         <Stack.Screen name="ForgotScreen" component={ForgotScreen} options={{ headerTitle: 'Forgot Password' }}/>
